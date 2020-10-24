@@ -1,0 +1,7 @@
+﻿input.invalid:focus {
+    outline-color: red;
+}
+
+span {
+    align-content:flex-start;
+}

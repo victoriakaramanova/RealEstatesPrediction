@@ -1,0 +1,32 @@
+﻿
+table tbody tr {
+    background-color: white;
+}
+
+table thead tr:nth-child(2) {
+    color: darkblue;
+    font-weight: 600;
+    background-color: lightblue;
+    font-size:large;
+}
+
+table thead tr:nth-child(2) td:last-child{
+    color:none;
+    width:1px;
+}
+
+.announce {
+    text-align:center;
+    font-weight: 500;
+    color:darkviolet;
+    font-size: large;
+    margin: 2em;
+    padding: 1em;
+}
+/*tbody tr:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}*/

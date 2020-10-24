@@ -1,0 +1,362 @@
+﻿body {
+    background-color: #f3f3f3;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    max-width: 1130px;
+    padding-top: 40px;
+}
+
+/******************************
+* SLIDER START
+* Adapted from: http://benschwarz.github.io/gallery-css
+******************************/
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.css-slider .slide:first-of-type {
+    position: relative;
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 6;
+}
+
+.css-slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+    .css-slider .slide:nth-of-type(2) {
+        z-index: 5;
+    }
+
+    .css-slider .slide:nth-of-type(3) {
+        z-index: 4;
+    }
+
+    .css-slider .slide:nth-of-type(4) {
+        z-index: 3;
+    }
+
+    .css-slider .slide:nth-of-type(5) {
+        z-index: 2;
+    }
+
+    .css-slider .slide a {
+        cursor: pointer;
+    }
+
+.css-slider .slider-control-op {
+    display: none;
+}
+
+    .css-slider .slider-control-op:target ~ .slide {
+        pointer-events: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+        animation: none;
+    }
+
+    .css-slider .slider-control-op:target ~ .controls .slider-control-btn .square {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+        animation: none;
+    }
+
+/******************************
+* FIVE slides
+******************************/
+@-webkit-keyframes sliderControlAnimation-5 {
+    0% {
+        background: #96968c;
+    }
+
+    5.7%, 20% {
+        background: #70001A;
+    }
+
+    25.7%, 100% {
+        background: #96968c;
+    }
+}
+
+@-moz-keyframes sliderControlAnimation-5 {
+    0% {
+        background: #96968c;
+    }
+
+    5.7%, 20% {
+        background: #70001A;
+    }
+
+    25.7%, 100% {
+        background: #96968c;
+    }
+}
+
+@-o-keyframes sliderControlAnimation-5 {
+    0% {
+        background: #96968c;
+    }
+
+    5.7%, 20% {
+        background: #70001A;
+    }
+
+    25.7%, 100% {
+        background: #96968c;
+    }
+}
+
+@keyframes sliderControlAnimation-5 {
+    0% {
+        background: #96968c;
+    }
+
+    5.7%, 20% {
+        background: #70001A;
+    }
+
+    25.7%, 100% {
+        background: #96968c;
+    }
+}
+
+@-webkit-keyframes sliderGalleryAnimation-5 {
+    0% {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    5.7%, 20% {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    25.7%, 100% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes sliderGalleryAnimation-5 {
+    0% {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    5.7%, 20% {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    25.7%, 100% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes sliderGalleryAnimation-5 {
+    0% {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    5.7%, 20% {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    25.7%, 100% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes sliderGalleryAnimation-5 {
+    0% {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    5.7%, 20% {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    25.7%, 100% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+.slides-5.autoplay .slider-control-btn .square {
+    -webkit-animation: sliderControlAnimation-5 35s infinite;
+    -moz-animation: sliderControlAnimation-5 35s infinite;
+    -o-animation: sliderControlAnimation-5 35s infinite;
+    animation: sliderControlAnimation-5 35s infinite;
+}
+
+.slides-5.autoplay .slide {
+    -webkit-animation: sliderGalleryAnimation-5 35s infinite;
+    -moz-animation: sliderGalleryAnimation-5 35s infinite;
+    -o-animation: sliderGalleryAnimation-5 35s infinite;
+    animation: sliderGalleryAnimation-5 35s infinite;
+}
+
+/************************************************
+* ANIMATION DELAYS
+************************************************/
+.slides-2 .slider-control-btn:nth-of-type(1) .square,
+.slides-3 .slider-control-btn:nth-of-type(1) .square,
+.slides-4 .slider-control-btn:nth-of-type(1) .square,
+.slides-5 .slider-control-btn:nth-of-type(1) .square,
+.slides-2 .slide:nth-of-type(1),
+.slides-3 .slide:nth-of-type(1),
+.slides-4 .slide:nth-of-type(1),
+.slides-5 .slide:nth-of-type(1) {
+    -webkit-animation-delay: -2s;
+    -moz-animation-delay: -2s;
+    -o-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.slides-2 .slider-control-btn:nth-of-type(2) .square,
+.slides-3 .slider-control-btn:nth-of-type(2) .square,
+.slides-4 .slider-control-btn:nth-of-type(2) .square,
+.slides-5 .slider-control-btn:nth-of-type(2) .square,
+.slides-2 .slide:nth-of-type(2),
+.slides-3 .slide:nth-of-type(2),
+.slides-4 .slide:nth-of-type(2),
+.slides-5 .slide:nth-of-type(2) {
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.slides-3 .slider-control-btn:nth-of-type(3) .square,
+.slides-4 .slider-control-btn:nth-of-type(3) .square,
+.slides-5 .slider-control-btn:nth-of-type(3) .square,
+.slides-3 .slide:nth-of-type(3),
+.slides-4 .slide:nth-of-type(3),
+.slides-5 .slide:nth-of-type(3) {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+.slides-4 .slider-control-btn:nth-of-type(4) .square,
+.slides-5 .slider-control-btn:nth-of-type(4) .square,
+.slides-4 .slide:nth-of-type(4),
+.slides-5 .slide:nth-of-type(4) {
+    -webkit-animation-delay: 19s;
+    -moz-animation-delay: 19s;
+    -o-animation-delay: 19s;
+    animation-delay: 19s;
+}
+
+.slides-5 .slider-control-btn:nth-of-type(5) .square,
+.slides-5 .slide:nth-of-type(5) {
+    -webkit-animation-delay: 26s;
+    -moz-animation-delay: 26s;
+    -o-animation-delay: 26s;
+    animation-delay: 26s;
+}
+
+/*
+	Theme controls how everything looks in SLIDER CSS.
+*/
+.css-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+    .css-slider .slide {
+        overflow: hidden;
+        text-align: center;
+    }
+
+        .css-slider .slide p {
+            margin-bottom: 0;
+        }
+
+    .css-slider .controls {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 15;
+    }
+
+    .css-slider .slider-control-btn {
+        display: inline-block;
+        margin: 0 .02em;
+        font-size: 3em;
+        text-align: center;
+        text-decoration: none;
+    }
+
+.square {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #96968c;
+    -webkit-transition: background .1s;
+    -o-transition: background .1s;
+    transition: background .1s;
+}

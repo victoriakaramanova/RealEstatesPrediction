@@ -1,0 +1,6 @@
+# ImotiPrediction
+This project is implemented as an ASP.NET Core Web Application with a React.js template, and an EF Core/MS SQL code-first database. The general idea is inspired by a ML demo featuring the regression approach to a common process - the real-estate sale offers of an actual real-estate agency. The project data flow is: first, acquire the actual offers, 16-18K records (route '/gather-data'), store them in a db table, Offers, and then, use them for 3 different purposes. 
+The first one is to show randomly selected, several offers on the homepage. 
+The second, the main reason, is to predict a real-estate sales price to any logged user, who defined the estate parameters (district, building type, size etc.) in a form (route "/prediction"). All user searches are stored in a db table, Searches, and the last records are shown beneath the form. 
+On user request to see some actual ads matching his search criteria (the third reason to store the data), he is redirected to a list of actual offers (including the real offers' urls) that are similar to his search (same district and building type, nearest size and price, compared to the ML algorithm predicted price). Its route is "/near". 
+The guest page is "/". All the rest routes, including a route for the ML model training ("/train") are designed for authorized users.

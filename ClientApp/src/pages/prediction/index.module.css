@@ -1,0 +1,14 @@
+﻿.container {
+    width: auto;
+}
+
+span {
+    margin-left: 1em;
+    color: darkslateblue;
+}
+
+select, input {
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
